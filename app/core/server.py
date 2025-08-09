@@ -1,7 +1,7 @@
 # server.py
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 import shutil
-from dna_crypto import utils
+from core import utils
 import tempfile
 import os
 from main import encrypt_image, decrypt_image

@@ -8,19 +8,19 @@ cd ../..
 
 # Encrypt (with default: compression + splicing):
 
-python main.py --encrypt data/kodak/kodim01.png --key "my_secret_key" --output encrypted.bin
+python -m app.main --encrypt data/kodak/kodim01.png --key "my_secret_key" --output encrypted.dna
 
 #Encrypt (skip compression for debugging):
 
-python main.py --encrypt data/kodak/kodim01.png --key "my_secret_key" --output encrypted_nocomp.bin --no-compress
+python -m app.main --encrypt data/kodak/kodim01.png --key "my_secret_key" --output encrypted_nocomp.dna --no-compress
 
 #Encrypt (skip splice for debugging):
 
-python main.py --encrypt data/kodak/kodim01.png --key "my_secret_key" --output encrypted_nosplice.bin --no-splice
+python -m app.main --encrypt data/kodak/kodim01.png --key "my_secret_key" --output encrypted_nosplice.dna --no-splice
 
 #Decrypt:
 
-python main.py --decrypt encrypted.bin --key "my_secret_key" --output decrypted.png
+python -m app.main --decrypt encrypted.dna --key "my_secret_key" --output decrypted.png
 
 
 

@@ -8,4 +8,6 @@ uvicorn[standard]
 boto3
 zlib
 pynacl
+cryptography
+hmac
 google-cloud-storage

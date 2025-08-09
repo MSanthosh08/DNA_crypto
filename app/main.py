@@ -3,8 +3,8 @@ import argparse
 import struct
 import hashlib
 import hmac
-from dna_crypto import utils, dna_mapping, chaotic_splicing, protein_encoding, compression
-from dna_crypto import aead_cipher
+from .core import utils, dna_mapping, chaotic_splicing, protein_encoding, compression
+from .core import aead_cipher
 
 MAGIC = b'DNAC'
 VERSION = 1
