@@ -9,3 +9,4 @@ boto3
 pynacl
 cryptography
 google-cloud-storage
+python-multipart
