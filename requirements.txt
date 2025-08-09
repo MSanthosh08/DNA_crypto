@@ -8,5 +8,4 @@ uvicorn[standard]
 boto3
 pynacl
 cryptography
-hmac
 google-cloud-storage
