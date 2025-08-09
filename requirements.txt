@@ -4,7 +4,7 @@ scipy
 matplotlib
 pycryptodome
 fastapi
-uvicorn
+uvicorn[standard]
 boto3
 zlib
 pynacl

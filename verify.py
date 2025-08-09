@@ -1,4 +1,4 @@
-import hashlib, sys, numpy as np
+import hashlib, numpy as np
 from PIL import Image
 orig = np.array(Image.open("data/kodak/kodim01.png").convert("RGB"), dtype=np.uint8).tobytes()
 dec  = np.array(Image.open("decrypted.png").convert("RGB"), dtype=np.uint8).tobytes()
