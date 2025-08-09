@@ -1,0 +1,7 @@
+# to encrypt the photo
+
+python main.py --encrypt data/kodak/kodim01.png --key "my_secret_key" --output encrypted.bin --shape 768x512
+
+# to decrypt the photo
+
+python main.py --decrypt encrypted.bin --key "my_secret_key" --output decrypted.png --shape 768x512

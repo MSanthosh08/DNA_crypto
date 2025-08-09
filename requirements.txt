@@ -1,0 +1,9 @@
+numpy
+pillow
+scipy
+matplotlib
+pycryptodome
+fastapi
+uvicorn
+boto3
+google-cloud-storage
