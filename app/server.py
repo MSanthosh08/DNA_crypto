@@ -4,7 +4,7 @@ import shutil
 from .core import utils
 import tempfile
 import os
-from main import encrypt_image, decrypt_image
+from .main import encrypt_image, decrypt_image
 
 app = FastAPI(title="DNA-Chaos Encryptor")
 

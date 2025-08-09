@@ -22,7 +22,5 @@ python -m app.main --encrypt data/kodak/kodim01.png --key "my_secret_key" --outp
 
 python -m app.main --decrypt encrypted.dna --key "my_secret_key" --output decrypted.png
 
-
-
-# To verify both are same
-python verify.py
+ http://localhost:8000/docs
+ to view in server mode
