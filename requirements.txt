@@ -6,4 +6,6 @@ pycryptodome
 fastapi
 uvicorn
 boto3
+zlib
+pynacl
 google-cloud-storage

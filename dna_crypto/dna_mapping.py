@@ -1,15 +1,12 @@
-# lossless mapping: each 2 bits -> base. Operate on bytes input/outputs.
 def binary_to_dna(raw_bytes: bytes, key: str) -> str:
     bits = ''.join(f'{b:08b}' for b in raw_bytes)
     mapping = {'00':'A','01':'C','10':'G','11':'T'}
     dna = ''.join(mapping[bits[i:i+2]] for i in range(0, len(bits), 2))
-    # pad not needed because bytes length *8 is divisible by 2
     return dna
 
 def dna_to_binary(dna_seq: str, key: str) -> bytes:
     rev = {'A':'00','C':'01','G':'10','T':'11'}
     bits = ''.join(rev[b] for b in dna_seq)
-    # pad bits to multiple of 8
     if len(bits) % 8 != 0:
         bits = bits.ljust(((len(bits)//8)+1)*8, '0')
     out = bytearray()

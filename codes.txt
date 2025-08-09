@@ -13,3 +13,6 @@ python main.py --encrypt data/kodak/kodim01.png --key "my_secret_key" --output e
 # to decrypt the photo
 
 python main.py --decrypt encrypted.bin --key "my_secret_key" --output decrypted.png
+
+# To verify both are same
+python verify.py
