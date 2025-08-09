@@ -6,13 +6,23 @@ wget -r -np -nH --cut-dirs=3 -R "index.html*" http://r0k.us/graphics/kodak/
 cd ../..
 
 
-# to encrypt the photo
+# Encrypt (with default: compression + splicing):
 
 python main.py --encrypt data/kodak/kodim01.png --key "my_secret_key" --output encrypted.bin
 
-# to decrypt the photo
+#Encrypt (skip compression for debugging):
+
+python main.py --encrypt data/kodak/kodim01.png --key "my_secret_key" --output encrypted_nocomp.bin --no-compress
+
+#Encrypt (skip splice for debugging):
+
+python main.py --encrypt data/kodak/kodim01.png --key "my_secret_key" --output encrypted_nosplice.bin --no-splice
+
+#Decrypt:
 
 python main.py --decrypt encrypted.bin --key "my_secret_key" --output decrypted.png
+
+
 
 # To verify both are same
 python verify.py
